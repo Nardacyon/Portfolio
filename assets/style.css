@@ -70,6 +70,10 @@ nav {
     transition: all ease 0.4s;
 }
 
+.active-menu {
+    display: block !important;
+}
+
 .name {
     font-family: calibri;
     width: 500px;
