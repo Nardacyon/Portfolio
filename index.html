@@ -15,13 +15,14 @@
         <nav>
             <a href="index.html" class="logo">King</a>
 
-            <ul class="menu">
-                <li><a href="#main" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-
+            <div class="toggle">
+                <ul class="menu">
+                    <li><a href="#main" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
             <p class="lang">En</p>
         </nav>
 
@@ -46,7 +47,7 @@
         <div class="about-text">
             <h1>About Me</h1>
             <h2>Front End Developer</h2>
-            <p>I want to market myself as a front end developer. I believe that my strongest suit is building the interface that people enjoy to look at. I want to create products that pull in users and engage them with aesthetics and that make their online experience good. My projects are meant to be convenient and useful so that users can rely on them at any given moment, while also improving the product overtime. Scroll down to check out the sites I've made.</p>
+            <p>I want to market myself as a front end developer. I believe that my strongest suit is building the interface that people look at. I want to create products that pull in users and engage them with aesthetics and that make their online experience good. My projects are meant to be convenient and useful so that users can rely on them at any given moment, while also improving the product overtime. Scroll down to check out the sites I've made.</p>
             <a href="./assets/add-on/Resume-King Ting.pdf" target="_blank">Here is my Resume</a>
         </div>
         <div class="about-model"></div>
@@ -54,25 +55,29 @@
 
     <section id="portfolio">
         <h1 class="p-heading">Portfolio</h1>
+        <p class="p-desc">Click the Headers to try out the apps</p>
         <div class="p-b-container">
             <div class="p-box">
                 <div class="text-overlay">
                     <a href="https://nardacyon.github.io/WeatherDashboard/" target="_blank">Weather Dashboard</a href="" target="_blank">
-                    <p>Client Project</p>
+                    <p>This site allows the user to search up a city or location and will be shown the current weather outlook as well as a 5 day forecast. Your search history will be saved so that you can come back and check the weather with convenience.</p>
+                    <a class="repo" href="https://github.com/Nardacyon/WeatherDashboard/" target="_blank">Github Repo Here!</a>
                 </div>
                 <img src="./assets/images/weather.png" alt="Weather and forecast app">
             </div>
             <div class="p-box">
                 <div class="text-overlay">
                     <a href="https://nardacyon.github.io/Day-Planner/" target="_blank">Day Planner</a href="" target="_blank">
-                    <p>Client Project</p>
+                    <p>This app was one of my earlier works, its purpose is to help users plan out their work day and stay organized. By inputting an event in the text area and clicking save, you can plan your day accordingly.</p>
+                    <a class="repo" href="https://github.com/Nardacyon/Day-Planner/" target="_blank">Github Repo Here!</a>
                 </div>
                 <img src="./assets/images/day-planner.png" alt="Day planner app">
             </div>
             <div class="p-box">
                 <div class="text-overlay">
                     <a href="https://nardacyon.github.io/LocationLookup/" target="_blank">Location Lookup</a href="" target="_blank">
-                    <p>Client Project</p>
+                    <p>My most recent project. This project takes a location and displays a map of the location, weather outlook, and major news headlines relating to the user's search.</p>
+                    <a class="repo" href="https://github.com/Nardacyon/LocationLookup/" target="_blank">Github Repo Here!</a>
                 </div>
                 <img src="./assets/images/location-lookup.png" alt="Location lookup app">
             </div>
