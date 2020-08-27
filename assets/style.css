@@ -1,62 +1,6 @@
-/* * {
-    box-sizing: border-box;
+html {
+    scroll-behavior: smooth;
 }
-
-body {
-    background: #16519f;
-    font-family: 'Montserrat', serif;
-}
-
-.container {
-
-}
-
-.navbar {
-    background: #f5f5f5;
-}
-
-.menu-dropdown, .menu-home, .menu-contact {
-    background: #16519f;
-    color: white;
-    padding: 10px;
-    margin: 10px;
-    float: left;
-}
-
-.menu-dropdown:hover, .menu-home:hover, .menu-contact:hover {
-    color: white;
-    background: #f07f74
-}
-
-.contact-content {
-
-}
-
-.contact-card {
-    margin: 10px;
-    width: 50%;
-    box-shadow: 0 0 5px 2px;
-    padding: 10px;
-    background: white;
-    border-radius: 5px;
-    float: left;
-}
-
-.contact-card h2, .socials h2 {
-    color: #f07f74;
-    font-weight: bold;
-    font-size: 32px;
-}
-
-.socials { 
-    float: right;
-    padding: 10px;
-    margin: 10px;
-    background: white;
-}
-.footer {
-
-} */
 
 body {
     margin: 0px;
@@ -212,6 +156,21 @@ nav {
     font-size: 1.2rem;
     color: #f8dd2e;
 }
+
+.about-text a {
+    background-color: #4fcbe9;
+    color: #16519f;
+    font-size: 18px;
+    font-family: calibri;
+    font-weight: 600;
+    padding: 10px 15px;
+}
+
+.about-text a:hover {
+    background-color: #f07e74;
+    transition: all ease 0.5s;
+}
+
 #portfolio {
     width: 100%;
     box-sizing: border-box;
@@ -230,10 +189,10 @@ nav {
     text-align: center;
     color: #f07e74;
     padding: 10px 20px;
-    background-color: #16519f;
+    /* background-color: #16519f; */
     letter-spacing: 2px;
     border-radius: 3px;
-    box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+    /* box-shadow: 2px 2px 20px rgba(0,0,0,0.1); */
 }
 
 .p-box {
@@ -264,24 +223,23 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #4fcbe9;
+    background-color: #16519f;
     display: none;
 }
 
-.text-overlay h1, p {
-    color: #16519f;
-}
-
-.text-overlay h1 {
+.text-overlay a {
     font-size: 2.2rem;
     margin: 0px;
     padding: 0px;
     letter-spacing: 2px;
+    color: #4fcbe9;
+
 }
 
 .text-overlay p {
     font-size: 1.2rem;
     margin: 0px;
+    color: #f8dd2e;
 }
 
 .p-box:hover .text-overlay {
@@ -292,4 +250,126 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#contact-form {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-form form {
+    display: flex;
+    width: 70%;
+    height: 60vh;
+    background-color: white;
+    box-shadow: 2px 12px 20px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+}
+
+.contact-left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-right {
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid rgba(255,255,255, 0.08);
+}
+
+.c-l-heading {
+    font-family: calibri;
+    color: #f07e74;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    /* font-weight: 400; */
+}
+
+.f-email,.f-name {
+    display: flex;
+    flex-direction: column;
+    font-family: calibri;
+}
+
+.f-email h3,.f-name h3 {
+    color: #16519f;
+    font-size: 22px;
+}
+
+.f-email input, .f-name input {
+    height: 30px;
+    width: 250px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #f8dd2e;
+    color: #4e4e4e;
+    margin: 10px 0px;
+    font-family: calibri;
+    font-size: 18px;
+}
+
+.f-email input::placeholder, .f-name::placeholder {
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+
+.f-email input:focus, .f-name input:focus{
+    border-bottom: 1px solid #f8dd2e;
+    transition: all ease 0.5s;
+}
+.message{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.message h3 {
+    font-size: 18px;
+    color: #16519f;
+    font-family: calibri;
+}
+
+.contact-right textarea {
+    width: 100%;
+    height: 220px;
+    border: none;
+    outline: none;
+    /* background-color: transparent; */
+    box-sizing: border-box;
+    color: #4e4e4e;
+    font-size: 16px;
+}
+.contact-right textarea::placeholder {
+    color: #4e4e4e;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: calibri;
+}
+.contact-right button {
+    width: 100%;
+    height: 50px;
+    background-color: #4fcbe9;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    margin: 0px;
+    color: #16519f;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-right button:hover {
+    background: #f07e74;
+    transition: all ease 0.5s;
 }
