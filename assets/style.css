@@ -298,6 +298,12 @@ nav {
     align-items: center;
 }
 
+#contact {
+    color: #16519f;
+    font-size: 3.3rem;
+    margin: 10px;
+}
+
 .contact{
     background-color: white;
     /* display: flex; */
@@ -316,10 +322,10 @@ nav {
 }
 
 .contact p {
-    color: #16519f;
-    font-size: 18px;
+    color: #4fcbe9;
+    font-size: 24px;
     font-family: calibri;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /* #contact-form form {
